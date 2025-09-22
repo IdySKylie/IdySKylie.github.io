@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- SEO -->
+  <title>Idongesit — Front-end Developer & UI/UX Designer</title>
+  <meta name="description" content="Portfolio of Idongesit: front-end developer and UI/UX designer. Projects include Trip_Booking (Flutter) and My_WeatherApp." />
+  <meta name="keywords" content="Idongesit, portfolio, front-end developer, UI UX designer, Flutter, Trip Booking, Weather app" />
+  <meta name="author" content="Idongesit Obinwa" />
+  <!-- Replace with your real live URL after deploying -->
+  <link rel="canonical" href="https://YOUR-USERNAME.github.io/portfolio/">
+
+  <!-- Open Graph / Twitter (nice previews when you share your link) -->
+  <meta property="og:title" content="Idongesit — Front-end Developer & UI/UX Designer">
+  <meta property="og:description" content="See Trip_Booking and My_WeatherApp — clean UI, accessible code, and contact details.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://YOUR-USERNAME.github.io/portfolio/">
+  <meta property="og:image" content="assets/og-thumbnail.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Header / Navbar ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#" aria-label="Go to top of page">
+        <span class="brand__logo" aria-hidden="true"></span>
+        <span class="brand__name">Idongesit</span>
+      </a>
+
+      <nav aria-label="Primary">
+        <ul class="nav__list">
+          <li><a href="#" aria-current="page">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="kicker">Front-end web developer • UI/UX designer</p>
+          <h1 id="hero-title" class="hero__title">I design and build simple, clear web interfaces.</h1>
+          <p class="hero__body">Focused on clean layouts, accessible components, and maintainable CSS.</p>
+
+          <div class="hero__actions">
+            <a class="button button--brand" href="#projects">See Projects</a>
+          </div>
+        </div>
+
+        <!-- Decorative block to echo your Figma hero art -->
+        <div class="hero__art">
+          <img src="assets/profile-pic.png" alt="Profile picture of Idongesit Obinwa"></div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section id="projects" class="section" aria-labelledby="proj-title">
+      <div class="container">
+        <h2 id="proj-title">Featured Projects</h2>
+
+        <div class="projects">
+          <!-- Project 1 -->
+          <article class="card">
+            <!-- Use an image later by replacing this div with <img class="card__thumb" src="assets/trip-booking.jpg" alt="Trip_Booking app screen"> -->
+            <img class="card__thumb" src="assets/trip_booking.png" alt="Trip_Booking App Screenshot">
+            <div class="card__body">
+              <h3 class="card__title">Trip_Booking App (Flutter)</h3>
+              <p class="card__desc">A mobile app that simulates trip bookings with form validation and multi-screen navigation.</p>
+              <a class="button button--ghost" href="#contact" aria-label="Contact Idongesit about Trip_Booking">Contact about this project</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card">
+            <img class="card__thumb" src="assets/weather_app.png" alt="My_WeatherApp Screenshot">
+            <div class="card__body">
+              <h3 class="card__title">My_WeatherApp (Flutter)</h3>
+              <p class="card__desc"> A weather application that fetches and displays current weather data with a clean UI.</p>
+              <a class="button button--ghost" href="#contact" aria-label="Contact Idongesit about My_WeatherApp">Contact about this project</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container container--narrow">
+        <h2 id="about-title">About Me</h2>
+        <p>I’m Idongesit, a front-end developer and UI/UX designer. I enjoy building clear, accessible interfaces and translating design systems into clean CSS. I also build mobile apps with Flutter, including Trip_Booking and My_WeatherApp.</p>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="section section--last" aria-labelledby="contact-title">
+      <div class="container container--narrow">
+        <h2 id="contact-title">Contact</h2>
+        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+        <p>GitHub: <a href="https://github.com/YOUR-USERNAME" rel="noopener">github.com/YOUR-USERNAME</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/" rel="noopener">linkedin.com/in/YOUR-LINKEDIN</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <p class="footer__copy">© 2025 Idongesit Obinwa. All rights reserved.</p>
+    <nav aria-label="Footer">
+      <ul class="footer__nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+  <!-- JSON-LD schema for better SEO -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Idongesit Obinwa",
+    "jobTitle":"Front-end Developer & UI/UX Designer",
+    "url":"https://YOUR-USERNAME.github.io/portfolio/",
+    "sameAs":[
+      "https://github.com/YOUR-USERNAME",
+      "https://www.linkedin.com/in/YOUR-LINKEDIN/"
+    ]
+  }
+  </script>
+</body>
+</html>
