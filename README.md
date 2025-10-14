@@ -14,7 +14,14 @@ It is built using **HTML and CSS**, with an emphasis on clean layout, accessibil
 
  🚀 Deployment
 This project is deployed using **GitHub Pages**.  
-🔗 [View Live Website](https://idyskylie.github.io/)
+🔗 [View Live Website](https://idyskylie.github.io/) 
+
+
+## Accessibility & Responsiveness (Assignment-2)
+A11y: color contrast (button #0F766E), `:focus-visible` outlines, no-JS mobile menu.
+Responsive: Desktop, tablet/mobile breakpoints (1024px/640px), 2→1 column projects, stacked footer.
+Evaluated with WAVE Evaluation tool, screenshots are in the submitted document.
+
 
 ## 🛠️ Technologies Used
 - HTML5  
