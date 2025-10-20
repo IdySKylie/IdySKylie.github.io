@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+  
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -10,10 +10,9 @@
   <meta name="description" content="Portfolio of Idongesit: front-end developer and UI/UX designer. Projects include Trip_Booking (Flutter) and My_WeatherApp." />
   <meta name="keywords" content="Idongesit Obinwa, portfolio, front-end developer, UI/UX designer, Flutter, Trip Booking, Weather app" />
   <meta name="author" content="Idongesit Obinwa" />
-  
   <link rel="canonical" href="https://idyskylie.github.io/">
 
-  <!-- Open Graph / Twitter (nice previews when I share my link) -->
+  <!-- Open Graph / Twitter -->
   <meta property="og:title" content="Idongesit — Front-end Developer & UI/UX Designer">
   <meta property="og:description" content="See Trip_Booking and My_WeatherApp — clean UI, accessible code, and contact details.">
   <meta property="og:type" content="website">
@@ -31,22 +30,38 @@
   <!-- Skip link for accessibility -->
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- ===== Header / Navbar ===== -->
-  <header class="site-header">
+  <!-- ===== Header / Navbar (desktop + mobile) ===== -->
+  <header class="site-header" id="top">
     <div class="container nav">
-      <a class="brand" href="#" aria-label="Go to top of page">
+
+      <a class="brand" href="#top" aria-label="Go to top of page">
         <span class="brand__logo" aria-hidden="true"></span>
         <span class="brand__name">Idongesit</span>
       </a>
 
-      <nav aria-label="Primary">
+      <!-- Desktop nav -->
+      <nav class="nav__primary" aria-label="Primary">
         <ul class="nav__list">
-          <li><a href="#" aria-current="page">Home</a></li>
+          <li><a href="#top" aria-current="page">Home</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact Me</a></li>
         </ul>
       </nav>
+
+      <!-- Mobile/tablet nav (no JS; keyboard & screen-reader friendly) -->
+      <details class="nav__mobile">
+        <summary aria-label="Open main menu">Menu</summary>
+        <nav aria-label="Primary mobile">
+          <ul class="nav__list nav__list--mobile">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </nav>
+      </details>
+
     </div>
   </header>
 
@@ -56,17 +71,18 @@
       <div class="container hero__grid">
         <div class="hero__text">
           <p class="kicker">Front-end web developer • UI/UX designer</p>
-          <h1 id="hero-title" class="hero__title">I design and build simple, clear web interfaces.</h1>
-          <p class="hero__body">Focused on clean layouts, accessible components, and maintainable CSS.</p>
+          <h1 id="hero-title" class="hero__title">I design and build simple, clear web interfaces, 
+            I also design Artistic portraits, and build dashboards.</h1>
+          <p class="hero__body">I am focused on clean layouts, accessible components, and maintainable CSS.</p>
 
           <div class="hero__actions">
             <a class="button button--brand" href="#projects">See Projects</a>
           </div>
         </div>
 
-        <!-- Decorative block to echo my Figma hero art -->
         <div class="hero__art">
-          <img src="assets/profile-pic.png" alt="Profile picture of Idongesit Obinwa"></div>
+          <img src="assets/profile-pic.png" alt="Profile picture of Idongesit Obinwa">
+        </div>
       </div>
     </section>
 
@@ -78,7 +94,6 @@
         <div class="projects">
           <!-- Project 1 -->
           <article class="card">
-            
             <img class="card__thumb" src="assets/trip_booking.png" alt="Trip_Booking App Screenshot">
             <div class="card__body">
               <h3 class="card__title">Trip_Booking App (Flutter)</h3>
@@ -92,8 +107,28 @@
             <img class="card__thumb" src="assets/weather_app.png" alt="My_WeatherApp Screenshot">
             <div class="card__body">
               <h3 class="card__title">My_WeatherApp (Flutter)</h3>
-              <p class="card__desc"> A weather application that fetches and displays current weather data with a clean UI.</p>
+              <p class="card__desc">A weather application that fetches and displays current weather data with a clean UI.</p>
               <a class="button button--ghost" href="#contact" aria-label="Contact Idongesit about My_WeatherApp">Contact about this project</a>
+            </div>
+          </article> 
+
+          <!-- Project 3 -->
+          <article class="card">
+            <img class="card__thumb" src="assets/Belugawhale_Mosaic_Portrait.png" alt="Beluga Family Mosaic Portrait">
+            <div class="card__body">
+              <h3 class="card__title">Beluga Family Mosaic Portrait</h3>
+              <p class="card__desc">This is a portrait I created using Adobe Illustrator, Showing the Beluga whales Family.</p>
+              <a class="button button--ghost" href="#contact" aria-label="Contact Idongesit about Portraits like this">Contact about this project</a>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="card">
+            <img class="card__thumb" src="assets/Flight_Tracking_Dashboard.png" alt="Flight_Tracking_Dashboard">
+            <div class="card__body">
+              <h3 class="card__title">Flight_Tracking_Dashboard</h3>
+              <p class="card__desc">A clean and non clustered flight tracking dashboard I created using Figma.</p>
+              <a class="button button--ghost" href="#contact" aria-label="Contact Idongesit about FDashboards like this">Contact about this project</a>
             </div>
           </article>
         </div>
@@ -120,19 +155,19 @@
   </main>
 
   <!-- ===== Footer ===== -->
-<footer class="site-footer">
-  <div class="container footer__grid">
-    <p class="footer__copy">© 2025 Idongesit Obinwa. All rights reserved.</p>
-    <nav aria-label="Footer">
-      <ul class="footer__nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</footer>
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <p class="footer__copy">© 2025 Idongesit Obinwa. All rights reserved.</p>
+      <nav aria-label="Footer">
+        <ul class="footer__nav">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 
   <!-- JSON-LD schema for better SEO -->
   <script type="application/ld+json">
@@ -141,7 +176,7 @@
     "@type":"Person",
     "name":"Idongesit Obinwa",
     "jobTitle":"Front-end Developer & UI/UX Designer",
-    "url":"https://idyskylie.github.io/portfolio/",
+    "url":"https://idyskylie.github.io/",
     "sameAs":[
       "https://github.com/idyskylie/",
       "https://www.linkedin.com/in/idongesitobinwa/"
